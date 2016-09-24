@@ -6,7 +6,7 @@ public class ArgsTest
    String name = "user"; //default name is user
    //System.out.println(args.toString(array));
 
-   if (args[0] != null) {
+   if (args.length != 0) {
     System.out.println("DEBUG: It works");
     name = args[0];
    }
