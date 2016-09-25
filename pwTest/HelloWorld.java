@@ -6,7 +6,7 @@ public class HelloWorld
  public static void main(String[] args)
   {
    String myStr; //professor told us to do it
-   System.out.println("Please enter password:");
+   System.out.print("Please enter password:");
    Scanner keyboardInput = new Scanner(System.in);
    String kInput = keyboardInput.nextLine();
    System.out.println("Password is:" + kInput);
@@ -19,13 +19,13 @@ public class HelloWorld
   }
  private static boolean checkPw(String userPassword) {
   String password = "fuckoff";
-  System.out.println("pw is: " + password + " , userPw is: " + userPassword);
+  //System.out.println("pw is: " + password + " , userPw is: " + userPassword);
    if (password.equals(userPassword)) {
-    System.out.println("DEBUG: Password Check success");
+   //System.out.println("DEBUG: Password Check success");
     return true;
    }
    else {
-    System.out.println("DEBUG: password check failed");
+    //System.out.println("DEBUG: password check failed");
     return false;
    }
  }
