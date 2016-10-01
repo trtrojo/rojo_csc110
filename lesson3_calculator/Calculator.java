@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Calculator {
  public static void main(String[] args)
   {
-    int a, b, c;
+    double a, b, c;
     System.out.print("Enter first number: ");
     a = getNum();
     System.out.print("Enter second number: ");
@@ -17,24 +17,24 @@ public class Calculator {
 
   }
 
- public static void addNum(int x, int y) {
+ public static void addNum(double x, double y) {
   System.out.println("Result of addition :" + (x+y));
  }
- public static void subNum(int x, int y) {
+ public static void subNum(double x, double y) {
   System.out.println("Result of subtraction: " + (x-y));
  }
- public static void divNum(int x, int y) {
+ public static void divNum(double x, double y) {
   System.out.println("Result of division: " + (x/y));
  }
- public static void modNum(int x, int y) {
+ public static void modNum(double x, double y) {
   System.out.println("Result of Modulus: " + (x%y));
  }
- public static void multNum(int x, int y) {
+ public static void multNum(double x, double y) {
   System.out.println("Result of Multiplication: " + (x*y));
  }
- public static int getNum() {
+ public static double getNum() {
   Scanner keyboardInput = new Scanner(System.in);
-  int kInput = keyboardInput.nextInt();
+  double kInput = keyboardInput.nextDouble();
   return (kInput);
  }
 }
