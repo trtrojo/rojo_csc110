@@ -1,7 +1,10 @@
-/* TempCalc -- Modified for lab#5
- * Last edited: 2016-11-21
+/* TempCalc -- Modified for lab#6
+ * Last edited: 2016-12-04
  *  Tommy Rojo <tommy.rojo@stu.bmcc.cuny.edu>
  *  Converts centigrade to farenheit and reverse
+ *
+ *  Lab 6 -- Take previous lab, but break out the conversion code
+ *    into a function.
  */
 
 import java.util.Scanner;
@@ -125,6 +128,15 @@ public class TempCalc {
   }
  }
 
+ /* Temperature converter function (fancy way for doing file IO)
+  *  TODO: Make sure to add an option on whether to print to screen instead of hardcoding it as true.
+  *
+  * Usage: fileConvertTemp(<source file path>,<Destination file path>,<Conversion Type>);
+  *
+  * Example: fileConvertTemp("/tmp/a.log","/tmp/b.log","CF") (CF = Centigrade to Farenheit)
+  *
+  *  Outputs a boolean value on whether successful. Will print to console if not
+  */
  public static boolean fileConvertTemp(String srcFile, String dstFile, String cType) throws IOException {
    File iFileObj = new File(srcFile);
    Scanner inputFile = new Scanner(iFileObj);
