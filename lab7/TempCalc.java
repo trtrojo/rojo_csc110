@@ -1,5 +1,5 @@
 /* TempCalc -- Modified for lab#6
- * Last edited: 2016-12-04
+ * Last edited: 2016-12-11
  *  Tommy Rojo <tommy.rojo@stu.bmcc.cuny.edu>
  *  Converts centigrade to farenheit and reverse
  *
